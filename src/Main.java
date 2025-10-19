@@ -1,19 +1,21 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import model.Usuario;
+import services.Biblioteca;
+
 public class Main {
     public static void main(String[] args) {
-        Biblioteca b = new Biblioteca();
-        b.adicionarLivro("O senhor dos anéis", "J. R. R. Tolkien", 1954);
-        b.adicionarLivro("Refatoração", "Martin Fowler", 2020);
+        Biblioteca biblioteca = new Biblioteca();
 
-        Usuario u = new Usuario();
-        u.nome = "Maria";
-        u.idade = 21;
-        u.email = "maria@gmail.com";
+        biblioteca.adicionarLivro("O Senhor dos anéis", "J. R. R. Tolkien", 1954);
+        biblioteca.adicionarLivro("Refatoração", "Martin Fowler", 2020);
 
-        b.realizarEmprestimo(u, "O senhor dos anéis");
-        b.realizarEmprestimo(u, "Refatoração");
+        Usuario usuario = new Usuario("Maria", 21, "maria@gmail.com");
 
-        b.listarEmprestimos();
+        biblioteca.realizarEmprestimo(usuario, "O senhor dos anéis");
+        biblioteca.realizarEmprestimo(usuario, "Refatoração");
+
+        biblioteca.listarEmprestimos();
+
+        System.out.println("\n--- Relatório de Livros ---");
+        biblioteca.relatorioLivros();
     }
 }
