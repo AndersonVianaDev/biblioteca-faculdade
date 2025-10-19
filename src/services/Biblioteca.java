@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Biblioteca {
-    private static final String MENSAGEM_EMPRESTIMO_REALIZADO = "model.Emprestimo realizado: %s pegou %s";
-    private static final String MENSAGEM_LIVRO_NAO_DISPONIVEL = "model.Livro não disponível";
-    private static final String MENSAGEM_LIVRO_NAO_ENCONTRADO = "model.Livro não encontrado";
+    private static final String MENSAGEM_EMPRESTIMO_REALIZADO = "Emprestimo realizado: %s pegou %s";
+    private static final String MENSAGEM_LIVRO_NAO_DISPONIVEL = "Livro não disponível";
+    private static final String MENSAGEM_LIVRO_NAO_ENCONTRADO = "Livro não encontrado";
     private static final String MENSAGEM_USUARIO_INVALIDO = "Usuário inválido";
     private static final String MENSAGEM_TITULO_INVALIDO = "Título do livro inválido";
     
